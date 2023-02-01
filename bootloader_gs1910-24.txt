@@ -1,0 +1,70 @@
+.+M25PXX : Init device with JEDEC ID 0xC22018.
+Luton26 board detected (VSC7427 Rev. D).
+
+RedBoot(tm) bootstrap and debug environment [ROMRAM]
+Non-certified release, version 1_12_2-customized-z - built 10:29:36, Feb  9 2012
+
+Copyright (C) 2000, 2001, 2002, 2003, 2004, 2005, 2006, 2007, 2008, 2009
+Free Software Foundation, Inc.
+RedBoot is free software, covered by the eCos license, derived from the GNU General Public License. You are welcome to change it and/or distribute copies of it under certain conditions. Under the license terms, RedBoot's source code and full license terms must have been made available to you. Redboot comes with ABSOLUTELY NO WARRANTY.
+
+Platform: VCore-III (MIPS32 24KEc) LUTON26
+RAM: 0x80000000-0x88000000 [0x80020f18-0x87fe1000 available]
+FLASH: 0x40000000-0x40ffffff, 256 x 0x10000 blocks
+== Executing boot script in 3.000 seconds - enter ^C to abort
+^C
+RedBoot> help
+Manage aliases kept in FLASH memory
+   alias name [value]
+Set/Query the system console baud rate
+   baudrate [-b <rate>]
+Manage machine caches
+   cache [ON | OFF]
+Display/switch console channel
+   channel [<channel number>]
+Compute a 32bit checksum [POSIX algorithm] for a range of memory
+   cksum -b <location> -l <length>
+Show calculated ddr parameters
+   ddrparams 
+restore to default
+   default 
+Run Power-On-Self-Test
+  -q: Quiet operation
+  -a: Run all tests
+  -t: Run TCAM self-test
+  -d: Run DDR SDRAM test
+  -k: Run DDR SDRAM test continuously (Keep going)
+   diag [-q] [-a] [-t] [-d] [-h]
+Display (hex dump) a range of memory
+   dump -b <location> [-l <length>] [-s] [-1|-2|-4]
+Execute an image
+   exec [-b <argv addr>] [-c "kernel command line"] [-w <timeout>]
+        [<entry point>]
+Manage FLASH images
+   fis {cmds}
+Manage configuration kept in FLASH memory
+   fconfig [-i] [-l] [-n] [-f] [-d] | [-d] nickname [value]
+Execute code at a location
+   go [-w <timeout>] [-c] [entry]
+Uncompress GZIP compressed data
+   gunzip -s <location> -d <location>
+Help about help?
+   help [<topic>]
+Display command history
+   history 
+Load a file
+   load [-r] [-v] [-d] [-m <varies>] 
+        [-b <base_address>] <file_name>
+Compare two blocks of memory
+   mcmp -s <location> -d <location> -l <length> [-1|-2|-4]
+Copy memory from one address to another
+   mcopy -s <location> -d <location> -l <length> [-1|-2|-4]
+Fill a block of memory with a pattern
+   mfill -b <location> -l <length> -p <pattern> [-1|-2|-4]
+Reset the system
+   reset 
+Display RedBoot version information
+   version 
+Display (hex dump) a range of memory
+   x -b <location> [-l <length>] [-s] [-1|-2|-4]
+RedBoot> 

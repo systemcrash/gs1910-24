@@ -1,0 +1,56 @@
+.+M25PXX : Init device with JEDEC ID 0xC22018.
+Luton26 board detected (VSC7427 Rev. D).
+
+RedBoot(tm) bootstrap and debug environment [ROMRAM]
+Non-certified release, version 1_12_2-customized-z - built 10:29:36, Feb  9 2012
+
+Copyright (C) 2000, 2001, 2002, 2003, 2004, 2005, 2006, 2007, 2008, 2009
+Free Software Foundation, Inc.
+RedBoot is free software, covered by the eCos license, derived from the GNU General Public License. You are welcome to change it and/or distribute copies of it under certain conditions. Under the license terms, RedBoot's source code and full license terms must have been made available to you. Redboot comes with ABSOLUTELY NO WARRANTY.
+
+Platform: VCore-III (MIPS32 24KEc) LUTON26
+RAM: 0x80000000-0x88000000 [0x80020f18-0x87fe1000 available]
+FLASH: 0x40000000-0x40ffffff, 256 x 0x10000 blocks
+== Executing boot script in 3.000 seconds - enter ^C to abort
+RedBoot> diag -a
+Hardware self-test: ... Passed
+IS1 TCAM self-test: ... Passed
+IS2 TCAM self-test: ... Passed
+ES0 TCAM self-test: ... Passed
+DDR SDRAM: Testing [0x80020f18-0x87fe1000] - Zero  Sweep Done
+DDR SDRAM: Testing [0x80020f18-0x87fe1000] - Write Sweep ............................................................................................................................... Done
+DDR SDRAM: Testing [0x80020f18-0x87fe1000] - Read  Sweep ............................................................................................................................... Done
+3 tests completed successfully.
+RedBoot> fis load -d managed
+Image loaded from 0x80040000-0x80988230
+RedBoot> go
+
+Press ENTER to get started
+
+
+Username: root
+Password: 
+switch# ?
+    clear        Reset functions
+    configure    Enter configuration mode
+    copy         Copy from source to destination
+    delete       Delete one file in flash: file system
+    dir          Directory of all files in flash: file system
+    disable      Turn off privileged commands
+    do           To run exec commands in config mode
+    dot1x        IEEE Standard for port-based Network Access Control
+    enable       Turn on privileged commands
+    exit         Exit from EXEC mode
+    firmware     Firmware upgrade/swap
+    help         Description of the interactive help system
+    ip           IPv4 commands
+    logout       Exit from EXEC mode
+    more         Display file
+    no           Negate a command or set its defaults
+    ping         Send ICMP echo messages
+    platform     Platform configuration
+    reload       Reload system.
+    send         Send a message to other tty lines
+    show         Show running system information
+    terminal     Set terminal line parameters
+switch#
